@@ -49,9 +49,9 @@ padding-left: 30px; /*isso afasta o texta da parede do site */
 font-family: var(--fonte1);
 font-size: 3.5vw /*isso faz a largura da escrita se adaptar conforme a tela aumente ou diminua */
 
-
-
 }
+
+section > p {padding-bottom: 2em;}
 
 section.normal {
     background-color: white;
@@ -59,13 +59,26 @@ section.normal {
 }
 
 section.imagem {background-color: rgb(165, 57, 57);
-color: rgb(255, 255, 255);}
+color: rgb(255, 255, 255);
+box-shadow: inset 8px 8px 16px 0px rgba(0, 0, 0, 0.637);
+background-attachment: fixed;}
 
 
 
-section.imagem > p {background-color: rgba(0, 0, 0, 0.479);
+section.imagem > p {background-color: rgba(0, 0, 0, 0.589);
 display: inline-block; /* isso faz uma caixa que se adapta ao tamanho do paragrafo */
-padding: 7px;}
+padding: 7px;
+text-shadow: 1px 1px 0px black;
+
+}
+
+section#img01 {background-image: url('../imagens/background001.jpg');
+background-position: right center;
+background-size: cover;}
+
+section#img02 {background-image: url('../imagens/background002.jpg');
+background-position: right center;
+background-size: cover;}
 
 
 
