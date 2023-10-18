@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Zeyada&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+
+:root {
+    --fonte1: 'Kalam', cursive;
+    --fonte2: 'Berkshire Swash', serif;
+
+
+}
+
+
+
+* {margin: 0%;  /*essa estrelinha configura o site inteiro */
+    padding: 0%;
+}
+
+html, body {
+    min-height: 100vh; /* esse vh significa altura do site */
+    
+    
+    background-color: darkgray;}
+
+    header {background-color: black;
+    color: white;
+text-align: center;}
+
+header > h1 {
+    padding-top: 50px; /*significa mais espaço acima do h1 */
+    font-variant: small-caps; /* Font-variante:small-caps sao letras um pouco maiores 
+    /* text-transform:uppercase; faz todas as letras ficarem maiusculas */
+    font-family: var(--fonte2);
+    font-size: 10vw; /*isso faz a largura da escrita se adaptar conforme a tela aumente ou diminua */
+    }
+header > p {padding-bottom: 50px;} /* usando paddin bottom e top 50% vc deixa o h1 totalmente no meio */
+
+header a, footer a {color: rgb(131, 168, 45);
+text-decoration: none; /* isso tira o tracinho do link */
+font-weight: bolder;} /* isso deixa a letra grossa */
+
+header a:hover, footer a:hover {text-decoration: underline;} /* isso faz o traço aparecer ao passar o mouse por cima */
+
+section {padding-top: 10vh; /* essa configuração aumentou os espaços de paragrafo para paragrafo */
+padding-bottom: 10vh;
+line-height: 2em; /*isso aumento a espaço de linha para linha */
+padding-left: 30px; /*isso afasta o texta da parede do site */
+font-family: var(--fonte1);
+font-size: 3.5vw /*isso faz a largura da escrita se adaptar conforme a tela aumente ou diminua */
+
+
+
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {background-color: rgb(165, 57, 57);
+color: rgb(255, 255, 255);}
+
+
+
+section.imagem > p {background-color: rgba(0, 0, 0, 0.479);
+display: inline-block; /* isso faz uma caixa que se adapta ao tamanho do paragrafo */
+padding: 7px;}
+
+
+
+footer {background-color: black;
+text-align: center;
+padding: 10px;
+}
+
+
+
+
